@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejemplo de presentacion de datos</title>
+</head>
+<body>
+	<h1>Lista de medicos</h1>
+	{% for elemento in lista %}
+	<ul>
+		<li><strong>{{elemento.nombre_medico}}</strong></li>
+		<li>{{elemento.institucion}}</li>
+		<li>{{elemento.hospital}}</li>
+	</ul>
+	{% endfor %}
+</body>
+</html>
