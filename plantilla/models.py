@@ -14,7 +14,7 @@ from django.db import models
 class Tbl1LlcMed(models.Model):
     id_tbl1 = models.IntegerField(primary_key=True)
     folio = models.IntegerField()
-    nombre_medico = models.CharField(max_length=600)
+    nombre_medico = models.CharField(max_length=800)
     institucion = models.CharField(max_length=45)
     hospital = models.CharField(max_length=750)
     cod_med = models.CharField(max_length=21)
